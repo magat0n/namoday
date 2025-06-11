@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosso Jornal do Amor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <header>
+    <h1 class="animate-fadein">📰 Jornal do Amor 💖</h1>
+    <p id="contador" class="animate-slidein"></p>
+  </header>
+
+  <main>
+    <section class="historia animate-up">
+      <h2>Nossa História</h2>
+      <p>Nos conhecemos de um jeito inesperado, por uma simples conversa no instagram, mas o destino sabia exatamente o que estava fazendo. Desde aquele primeiro momento, algo surgiu dentro de nós. Cada momento desde então foi uma nova página da nossa linda história.</p>
+      <p>Juntos, enfrentamos desafios, celebramos conquistas e, acima de tudo, aprendemos o verdadeiro significado do amor.</p>
+    </section>
+
+    <section class="galeria animate-fadein">
+      <h2>Momentos Juntos</h2>
+      <div class="fotos">
+        <img src="images/WhatsApp Image 2025-06-10 at 21.35.12 (1).jpeg" alt="Momentos juntos 1" class="animate-pop" data-desc="Um dia especial em que fizemos nosso primeiro treino juntos.">
+        <img src="images/WhatsApp Image 2025-06-10 at 21.35.12 (2).jpeg" alt="Momentos juntos 2" class="animate-pop" data-desc="Neste dia, passamos alguns minutos juntos, mas cada segundo valeu a pena.">
+        <img src="images/WhatsApp Image 2025-06-10 at 21.35.12 (3).jpeg" alt="Momentos juntos 3" class="animate-pop" data-desc="O primeiro aniversário em que passamos juntos, nossas risadas ainda ecoam em minha memória.">
+        <img src="images/WhatsApp Image 2025-06-10 at 21.35.12 (4).jpeg" alt="Momentos juntos 4" class="animate-pop" data-desc="Um simples passeio pelo shopping, mas cada olhar trocado foi especial.">
+        <img src="images/WhatsApp Image 2025-06-10 at 21.35.12 (5).jpeg" alt="Momentos juntos 5" class="animate-pop" data-desc="Com o tempo, fomos criando intimidade, aqui descobri minha segunda casa: a sua!">
+        <img src="images/WhatsApp Image 2025-06-10 at 21.35.12.jpeg" alt="Momentos juntos 6" class="animate-pop" data-desc="Jamais irei me esquecer desse dia, o dia do nosso primeiro eu te amo!">
+      </div>
+      <!-- Modal para imagem ampliada -->
+      <div class="img-modal-bg" id="imgModal">
+        <div class="img-modal-content">
+          <button class="img-modal-close" id="closeImgModal" aria-label="Fechar">&times;</button>
+          <img id="modalImg" src="" alt="Foto ampliada">
+          <p id="modalDesc"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="frases animate-up">
+      <h2>Frases Românticas</h2>
+      <blockquote id="frase"></blockquote>
+      <button onclick="novaFrase()">Nova Frase</button>
+    </section>
+  </main>
+
+  <footer class="animate-fadein">
+    <p>Com amor, nós para sempre. ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
